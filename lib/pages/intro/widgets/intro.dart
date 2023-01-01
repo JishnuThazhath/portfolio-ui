@@ -3,7 +3,7 @@ import 'package:portfolio_ui/helper/responsiveness.dart';
 
 Widget intro(BuildContext context) {
   double height = ResponsiveWidget.pageBlockSizeVertical(context);
-  return Expanded(
+  return Flexible(
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: ResponsiveWidget.isLargeScreen(context) ||
