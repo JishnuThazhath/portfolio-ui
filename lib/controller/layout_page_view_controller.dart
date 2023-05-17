@@ -1,6 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:portfolio_ui/helper/app_scroll_behaviour.dart';
 import 'package:portfolio_ui/helper/responsiveness.dart';
+import 'package:portfolio_ui/pages/about/about_page_large.dart';
+import 'package:portfolio_ui/pages/about/about_page_small.dart';
 import 'package:portfolio_ui/pages/intro/intro_page_large.dart';
 import 'package:portfolio_ui/pages/intro/intro_page_small.dart';
 
@@ -24,6 +26,10 @@ class _LayoutPageViewControllerState extends State<LayoutPageViewController> {
         ResponsiveWidget(
           largeScreen: IntroPageLarge(),
           smallScreen: IntroPageSmall(),
+        ),
+        ResponsiveWidget(
+          largeScreen: AboutPageLarge(),
+          smallScreen: AboutPageSmall(),
         ),
       ],
     );
