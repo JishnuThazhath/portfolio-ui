@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_ui/helper/general_styles.dart';
 import 'package:portfolio_ui/layout.dart';
 
 void main() {
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'jishnuthazhath',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+          primarySwatch: Colors.blue,
+          primaryColor: GeneralStyles.primaryBackgroundColor),
       home: Layout(),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_ui/helper/general_styles.dart';
 import 'package:portfolio_ui/helper/responsiveness.dart';
 
 Widget intro(BuildContext context) {
@@ -6,19 +7,17 @@ Widget intro(BuildContext context) {
   return Flexible(
     child: Row(
       mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        SizedBox(height: height * 500),
-        const Text("Jishnu S",
-            style: TextStyle(
-                color: Colors.black,
-                //fontWeight: FontWeight.bold,
-                fontSize: 20)),
-        const Text(" - Software Engineer | AWS Infra Engineer",
-            style: TextStyle(color: Color(0xFF8f8f8f), fontSize: 20)),
+        SizedBox(height: height * 200),
+        Flexible(
+          child: Text(
+              "is a Software Engineer, Movie enthusiast and a wannabe Artist.",
+              style: GeneralStyles.bodyTextStyle),
+        ),
         SizedBox(
-          height: ResponsiveWidget.pageBlockSizeVertical(context) * 700,
+          height: height * 200,
         )
       ],
     ),
