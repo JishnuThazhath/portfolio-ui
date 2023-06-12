@@ -16,7 +16,10 @@ Widget appBottomSheet(BuildContext context) {
                     onPressed: () => _launchUrl(
                         "https://www.linkedin.com/in/jishnu-s-84108a158/"),
                     child: const Text("Linkedin")),
-                TextButton(onPressed: () {}, child: const Text("Github")),
+                TextButton(
+                    onPressed: () =>
+                        _launchUrl("https://github.com/JishnuThazhath"),
+                    child: const Text("Github")),
                 TextButton(onPressed: () {}, child: const Text("Twitter")),
                 TextButton(onPressed: () {}, child: const Text("Instagram"))
               ],

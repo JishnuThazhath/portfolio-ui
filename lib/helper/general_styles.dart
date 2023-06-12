@@ -15,8 +15,7 @@ class GeneralStyles {
     fontWeight: FontWeight.w500,
   ));
 
-  static Color primaryBackgroundColor =
-      const Color.fromARGB(255, 237, 236, 231);
+  static Color primaryBackgroundColor = Color.fromARGB(0, 252, 251, 251);
 
   static Color secondaryBackgroundColor = const Color.fromARGB(255, 19, 52, 53);
 }
